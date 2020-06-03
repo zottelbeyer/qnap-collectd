@@ -1,0 +1,4 @@
+docker build  -f amd64.Dockerfile -t $IMAGE_NAME .
+docker build  -f arm64v8.Dockerfile -t $IMAGE_NAME .
+docker build  -f arm32v7.Dockerfile -t $IMAGE_NAME .
+docker build  -f arm32v5.Dockerfile -t $IMAGE_NAME .
