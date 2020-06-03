@@ -1,0 +1,21 @@
+image: zottelbeyer/qnap-collectd:latest
+manifests:
+  - image: zottelbeyer/qnap-collectd:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: zottelbeyer/qnap-collectd:arm32v5
+    platform:
+      architecture: arm
+      os: linux
+      variant: v5
+  - image: zottelbeyer/qnap-collectd:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: zottelbeyer/qnap-collectd:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
