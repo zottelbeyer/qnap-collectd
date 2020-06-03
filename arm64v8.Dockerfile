@@ -7,7 +7,7 @@ RUN apk add curl && curl -L ${QEMU_URL} | tar zxvf - -C . --strip-components 1
 FROM arm64v8/debian:buster
 
 # Add QEMU
-COPY --from=builder qemu-arm-static /usr/bin
+COPY --from=builder qemu-aarch64-static /usr/bin
 
 COPY rootfs_prefix/ /usr/src/rootfs_prefix/
 COPY sources.list.d/nonfree.list /etc/apt/sources.list.d/nonfree.list
