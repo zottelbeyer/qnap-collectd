@@ -13,6 +13,7 @@ COPY rootfs_prefix/ /usr/src/rootfs_prefix/
 COPY sources.list.d/nonfree.list /etc/apt/sources.list.d/nonfree.list
 COPY collectd.conf /etc/collectd/collectd.conf
 COPY NAS-MIB.txt /usr/share/snmp/mibs/NAS-MIB.txt
+COPY QTS-MIB.txt /usr/share/snmp/mibs/QTS-MIB.txt
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
  && apt-get install --no-install-recommends -qy \
